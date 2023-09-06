@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/jquery.fullpage.css" />
     <!-- 폰트어썸 CDN -->
     <link
       rel="stylesheet"
@@ -11,13 +12,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/jquery.fullpage.css" />
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- favicon -->
     <link rel="shortcut icon" href="./images/common/favicon.ico" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/jquery.fullpage.js"></script>
     <script src="./js/main.js"></script>
     <title>Fit Partner</title>
@@ -27,7 +33,10 @@
     <!-- 헤더 -->
     <header>
       <div class="container">
-        <a href="./index.html"><img src="./images/common/Fit Partner.png" alt="HeaderLogo" /></a>
+
+        <a href="./index.html"
+          ><img src="./images/common/Fit Partner.png" alt="HeaderLogo"
+        /></a>
         <nav class="navMenu">
           <ul>
             <a href="./index.html"><li>서비스소개</li></a>
@@ -49,6 +58,7 @@
             </div>
             <ul>
               <a href="./index.html"><li>서비스소개</li></a>
+
               <a href="./becomeAvailable.html"><li>입점문의</li></a>
               <a href="./service.html"><li>고객센터</li></a>
               <a href="./company.html"><li>회사문의</li></a>
@@ -60,11 +70,16 @@
 
     <main id="fullpage">
       <!-- 섹션1 -->
-      <section class="section">
+
+      <section class="section" id="first_section">
         <main class="section_container">
           <section class="section1 section_inner">
             <article>
-              <div class="section1_text">
+              <div
+                class="section1_text"
+                data-aos="fade-down"
+                data-aos-duration="500"
+              >
                 <strong>PT</strong>
                 <span>도</span>
                 <br />
@@ -74,7 +89,8 @@
                 <button><h1>앱 다운로드</h1></button>
               </div>
             </article>
-            <img src="./images/main/section1_img1.png" alt="메인 이미지" />
+
+            <!-- <img src="./images/main/section1_img1.png" alt="메인 이미지" /> -->
           </section>
         </main>
       </section>
@@ -114,6 +130,7 @@
           </section>
         </main>
       </section>
+
       <!------- 섹션5(추가) ------->
       <section class="section">
         <main class="section_container">
@@ -206,7 +223,12 @@
       <section class="section">
         <main class="section_container">
           <section class="section4 section_inner">
-            <img class="pc_img" src="./images/main/section4_img1.png" alt="section4_img" />
+
+            <img
+              class="pc_img"
+              src="./images/main/section4_img1.png"
+              alt="section4_img"
+            />
             <article class="section4_text">
               <h4>
                 핏 파트너는 전국 <br />
@@ -214,7 +236,12 @@
                 지점과 함께<br />
                 하고 있습니다.
               </h4>
-              <img class="mobile_img" src="./images/main/section4_img1.png" alt="section4_img" />
+
+              <img
+                class="mobile_img"
+                src="./images/main/section4_img1.png"
+                alt="section4_img"
+              />
               <p>
                 핏 파트너가<br />
                 당신의 파트너가 되는 날을<br />
@@ -224,7 +251,87 @@
           </section>
         </main>
       </section>
+
       <!-------- 섹션7(servie추가) -------->
+      <section class="section">
+        <main>
+          <div class="becomeMainImg">
+            <div class="formwrap">
+              <form
+                class=""
+                action=""
+                method="post"
+                data-aos="zoom-out-down"
+                data-aos-duration="400"
+              >
+                <h4>무료 입점상담</h4>
+                <div>
+                  <input
+                    type="text"
+                    name="name"
+                    class="input_check_error"
+                    placeholder="업체명을 입력해주세요"
+                  />
+                  <i class="fa-solid fa-address-card"></i>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    name="zipcode"
+                    class="input_check_error"
+                    placeholder="업체 주소지를 입력해주세요"
+                  />
+                  <i class="fa-solid fa-building"></i>
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    name="email"
+                    class="input_check_error"
+                    placeholder="이메일을 입력해주세요"
+                  />
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    class="input_check_error"
+                    name="phone"
+                    placeholder="전화번호를 입력해주세요"
+                  />
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <textarea
+                    name="textBox"
+                    class="input_check_error"
+                    cols="10"
+                    rows="300"
+                    placeholder="문의 내용을 입력해주세요"
+                  ></textarea>
+                </div>
+                <div>
+                  <label for="remember-check">
+                    <input type="checkbox" id="remember-check" />
+                    개인정보 수집 및 정보이용에 동의합니다
+                  </label>
+                </div>
+                <div>
+                  <button id="btnSubmit" onclick="return checkTermsAndSubmit()">
+                    입점문의하기
+                  </button>
+                </div>
+                <div>
+                  <p>
+                    신청해주신 순서에 따라 담당자가 개별적으로상담전화를
+                    회신드릴 예정입니다.
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </main>
+      </section>
       <section class="section fp-auto-height">
         <!-- 푸터 -->
         <footer>
@@ -232,7 +339,10 @@
             <div class="footer_itemBox1">
               <img src="./images/common/footer_logo.png" alt="logo" />
               <p>주식회사 핏파트너 | 대표:ㅇㅇㅇ</p>
-              <p>사업자등록번호 : 512-78-45362 | 통신판매신고번호 : 제2023-1431호</p>
+
+              <p>
+                사업자등록번호 : 512-78-45362 | 통신판매신고번호 : 제2023-1431호
+              </p>
               <p>대구광역시 동구 화랑로525 (영진직업전문학교)</p>
               <p>대표전화 : 1922-7868</p>
               <p>대표이메일 : contact@fitpartner.com</p>
@@ -256,5 +366,31 @@
         </footer>
       </section>
     </main>
+
+    <script>
+      // 약관 동의 체크박스 하지 않을 시 submit 막는거 [0812]
+      function checkTermsAndSubmit() {
+        let checkBox = document.getElementById("remember-check");
+
+        if (!checkBox.checked) {
+          alert("개인정보 수집 및 정보이용에 동의해주세요.");
+          return false; // submit 디나이 시킴.
+        }
+        // else {
+        //   var $chk = document.querySelectorAll(".input_check_error");
+
+        //   elements.forEach(function (element) {
+        //     if (element.classList.contains("error")) {
+        //       return false;
+        //     } else {
+        //       // 동의가 되어있다면, 제출 허용.
+        //       return false;
+        //     }
+        //   });
+        return true;
+        // }
+      }
+      AOS.init();
+    </script>
   </body>
 </html>
