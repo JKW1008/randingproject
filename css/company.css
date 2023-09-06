@@ -17,14 +17,12 @@
   width: 80%;
   margin: 0 auto;
   text-align: center;
-  border: 1px solid white;
 }
 .company1_text .title {
   font-size: 3em;
   font-weight: 700;
   color: #0cc7d3;
   padding: 5% 0;
-  border: 1px solid #0cc7d3;
 }
 .company1_text .text {
   font-size: 1.5em;
