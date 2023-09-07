@@ -1,5 +1,4 @@
 $(function () {
-
   AOS.init({
     disable: function () {
       var desktop = 768;
@@ -11,7 +10,8 @@ $(function () {
     autoScrolling: true,
     navigation: true, //스크롤되는 구간별로 이동되는 버튼
     navigationPosition: "right",
-    scrollHorizontally: true,
+    anchors: ["sec1", "sec2", "sec3", "sec4", "sec5", "sec6", "sec7", "sec8"],
+
     responsiveWidth: 768,
     onLeave: function () {
       //풀페이지 전환되기 직전에 실행되는 콜백
