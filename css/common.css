@@ -14,20 +14,14 @@
 }
 .content {
   max-width: 1440px;
-
   margin: 0 auto;
-
-  /* margin: 0 auto; */
 }
 
 /* -----------header------------ */
 
 header {
   display: flex;
-
-
   justify-content: center;
-
   width: 100%;
   height: 60px;
   background-color: black;
@@ -48,8 +42,7 @@ a {
   align-items: center;
 }
 .container img {
-  width: 50%;
-  height: 70%;
+  width: 45%;
 }
 .container nav {
   width: 70%;
