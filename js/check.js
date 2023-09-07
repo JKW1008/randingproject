@@ -14,7 +14,7 @@ function btn_sendMessage() {
   //   console.log(templateId);
 
   // Increase the reservation value each time the function is called
-  reservation += 1;
+  reservation++;
 
   // If this is the first reservation of the month, set a timeout to reset it in a month
   if (reservation >= 1) {
@@ -23,15 +23,15 @@ function btn_sendMessage() {
     }, 2592000000); // Reset after one month (30 days *24 hours *60 minutes *60 seconds *1000 milliseconds)
   }
 
-  //   sendMessage(
-  //     name,
-  //     reservation,
-  //     companyname,
-  //     email,
-  //     phonnumber,
-  //     pfid,
-  //     templateId
-  //   );
+  sendMessage(
+    name,
+    reservation,
+    companyname,
+    email,
+    phonnumber,
+    pfid,
+    templateId
+  );
   console.log(reservation);
 }
 
@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("개인정보 취급방침에 동의해주셔야 예약이 가능합니다.");
     } else {
       btn_sendMessage();
+      // self.location.href = "./";
     }
   });
 });

@@ -39,7 +39,7 @@
                     <li data-anchor="sec2"><a href="#sec2">서비스소개</a></li>
                     <li data-anchor="sec7"><a href="#sec7">입점문의</a></li>
                     <li data-anchor="sec5"><a href="#sec5">커뮤니티</a></li>
-                    <li><a href="./company.html">회사문의</a></li>
+                    <li><a href="./company.php">회사문의</a></li>
                     <!-- <a href="#"  data-anchor="sec1"><li>서비스소개</li></a>
             <a href="#" data-anchor="sec1"><li>입점문의</li></a>
             <a href="./service.html"><li>커뮤니티</li></a>
@@ -61,7 +61,7 @@
                         <li data-anchor="sec2"><a href="#sec2">서비스소개</a></li>
                         <li data-anchor="sec7"><a href="#sec7">입점문의</a></li>
                         <li data-anchor="sec5"><a href="#sec5">커뮤니티</a></li>
-                        <li><a href="./company.html">회사문의</a></li>
+                        <li><a href="./company.php">회사문의</a></li>
                         <!-- <a href="./index.html"><li>서비스소개</li></a>
               <a href="./becomeAvailable.html"><li>입점문의</li></a>
               <a href="./service.html"><li>커뮤니티</li></a>
