@@ -150,7 +150,6 @@ function sendMessage(
           pfId: pfid,
           templateId: templateId,
           variables: {
-            "#{reservation}": reservation,
             "#{name}": name,
             "#{companyname}": companyname,
             "#{phonenumber}": phonnumber,

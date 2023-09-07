@@ -284,7 +284,7 @@
                             </div>
                             <div>
                                 <input type="text" class="input_check_error" name="phone" placeholder="전화번호를 입력해주세요"
-                                    id="phonnumber" />
+                                    id="phonenumber" />
                                 <i class="fa-solid fa-phone"></i>
                             </div>
                             <div>
@@ -321,7 +321,7 @@
                             </div>
                             <div style="display: none;">
                                 <a>get template info</a>
-                                <input type="text" id="template-id" value="KA01TP230904051709805B7OKxPku6w6" />
+                                <input type="text" id="template-id" value="KA01TP23090707121787977slbodjSrf" />
                                 <button onclick="getTemplateInfo()">get</button>
                             </div>
                             <div style="display: none;">
