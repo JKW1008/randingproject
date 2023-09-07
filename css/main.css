@@ -48,14 +48,21 @@
   border: 2px solid transparent;
   border-radius: 20px;
 
-  background-image: linear-gradient(#fff, #fff), linear-gradient(155deg, #0c50b5 0%, #0cc7d3 100%);
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(155deg, #0c50b5 0%, #0cc7d3 100%);
 
   background-origin: border-box;
   background-clip: content-box, border-box;
   cursor: pointer;
 }
 .section1_btn button:hover {
-  background-image: linear-gradient(to right, #0cc7d3 0%, #0cc7d3 29%, #3481f2 67%, #3481f2 100%);
+  background-image: linear-gradient(
+    to right,
+    #0cc7d3 0%,
+    #0cc7d3 29%,
+    #3481f2 67%,
+    #3481f2 100%
+  );
 }
 .section1_btn button h1 {
   padding: 10px;
@@ -411,7 +418,13 @@ h2 {
   border: none;
   font-size: 2rem;
   border-radius: 5px;
-  background-image: linear-gradient(91deg, #0cc7d3 0%, #0cc7d3 29%, #3481f2 67%, #3481f2 100%);
+  background-image: linear-gradient(
+    91deg,
+    #0cc7d3 0%,
+    #0cc7d3 29%,
+    #3481f2 67%,
+    #3481f2 100%
+  );
   background-origin: border-box;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
   margin: 28px 0 16px 0;
