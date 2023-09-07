@@ -142,7 +142,8 @@ h2 {
 }
 .section3_text h3 {
   font-size: 6em;
-  background: linear-gradient(94deg, #0cc7d3 0%, #3582f2 100%);
+  background: 
+  linear-gradient(94deg, #0cc7d3 0%, #3582f2 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -305,6 +306,8 @@ h2 {
   border-radius: 50%;
 }
 
+
+
 /* ----------media query---------- */
 @media screen and (max-width: 1440px) {
   .section_container {
@@ -437,7 +440,9 @@ h2 {
   margin: 28px 0 16px 0;
   transition: 0.5s;
 }
-
+.agree_text{
+  color: #707070;
+}
 /* ----------media query---------- */
 
 @media screen and (max-width: 1239px) {
