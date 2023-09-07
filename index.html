@@ -78,7 +78,6 @@
 
     <main id="fullpage">
       <!-- 섹션1 -->
-
       <section class="section" id="first_section">
         <main class="section_container">
           <section class="section1 section_inner">
@@ -108,6 +107,7 @@
       <section class="section">
         <main id="section2_bg">
           <section class="section_container">
+            <img src="./images/main/section2_memo.png" alt="memo" />
             <article class="section2_item1">
               <strong>PT</strong>
               <span>예약을</span>
@@ -140,7 +140,6 @@
           </section>
         </main>
       </section>
-
       <!------- 섹션5(추가) ------->
       <section class="section">
         <main class="section_container">
@@ -225,13 +224,19 @@
         <main class="section_container">
           <section class="section3 section_inner">
             <article class="section3_text">
-              <strong>핏 파트너 회원들만의</strong>
+              <strong>피트파트너 회원들만의</strong>
               <h3>커뮤니티</h3>
               <p>
-                핏 파트너들만의<br />
-                유용한 정보가 오가는<br />
-                커뮤니티 공간
+                사장, 트레이너, 회원 모두를 위한<br />
+                커뮤니티. 지식 공유, 동기부여.<br />
+                함께 더 나은 헬스 라이프를 즐겨보세요.
               </p>
+
+              <div class="section1_btn section3_btn">
+                <button>
+                  <a href="#"><h1>바로가기</h1></a>
+                </button>
+              </div>
             </article>
             <img src="./images/main/section3_img1.png" alt="section3_img" />
           </section>
@@ -248,7 +253,7 @@
             />
             <article class="section4_text">
               <h4>
-                핏 파트너는 전국 <br />
+                피트파트너는 전국 <br />
                 현재 <span>약 8,900곳</span>의<br />
                 지점과 함께<br />
                 하고 있습니다.
@@ -260,7 +265,7 @@
                 alt="section4_img"
               />
               <p>
-                핏 파트너가<br />
+                피트파트너가<br />
                 당신의 파트너가 되는 날을<br />
                 기다립니다.
               </p>
@@ -278,7 +283,7 @@
                 class=""
                 action=""
                 method="post"
-                data-aos="zoom-out-down"
+                data-aos="fade-down"
                 data-aos-duration="200"
               >
                 <h4>무료 입점상담</h4>
@@ -388,31 +393,5 @@
         </footer>
       </section>
     </main>
-
-    <script>
-      // 약관 동의 체크박스 하지 않을 시 submit 막는거 [0812]
-      function checkTermsAndSubmit() {
-        let checkBox = document.getElementById("remember-check");
-
-        if (!checkBox.checked) {
-          alert("개인정보 수집 및 정보이용에 동의해주세요.");
-          return false; // submit 디나이 시킴.
-        }
-        // else {
-        //   var $chk = document.querySelectorAll(".input_check_error");
-
-        //   elements.forEach(function (element) {
-        //     if (element.classList.contains("error")) {
-        //       return false;
-        //     } else {
-        //       // 동의가 되어있다면, 제출 허용.
-        //       return false;
-        //     }
-        //   });
-        return true;
-        // }
-      }
-      AOS.init();
-    </script>
   </body>
 </html>
