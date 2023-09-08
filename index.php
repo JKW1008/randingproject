@@ -302,7 +302,6 @@
                                 <button id="btnSubmit" style="cursor: pointer;" type="button">
                                     입점문의하기
                                 </button>
-
                             </div>
                             <div>
                                 <p>

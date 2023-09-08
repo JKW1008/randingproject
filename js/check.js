@@ -7,15 +7,6 @@ function validatePhoneNumber(event) {
   }
 }
 
-function validatePhoneNumber(event) {
-  const value = event.target.value;
-  const onlyNumbers = value.replace(/\D/g, ""); // 숫자 이외의 문자 제거
-
-  if (value !== onlyNumbers) {
-    event.target.value = onlyNumbers; // 숫자로만 구성된 값으로 변경
-  }
-}
-
 function btn_sendMessage() {
   let name = document.getElementById("name").value;
   let companyname = document.querySelector("#companyname").value;
@@ -42,7 +33,7 @@ function saveData(companyname, name, email, phonenumber, detail) {
   f.append("detail", detail);
   f.append("mode", "input");
 
-  var xhr = new XMLHttpRequest();
+  const xhr = new XMLHttpRequest();
 
   xhr.open("POST", "./pg/reservation_process.php", true);
   xhr.send(f);
@@ -50,10 +41,10 @@ function saveData(companyname, name, email, phonenumber, detail) {
   xhr.onload = () => {
     if (xhr.status === 200) {
       const data = JSON.parse(xhr.responseText);
-
+      console.log(data);
       if (data.result == "success") {
         alert("예약접수 되었습니다.");
-        self.location.reload();
+        // self.location.reload();
       } else if (data.result == "empty_companyname") {
         alert("업체명을 입력해주세요.");
       } else if (data.result == "empty_name") {
@@ -64,6 +55,8 @@ function saveData(companyname, name, email, phonenumber, detail) {
         alert("형식에 맞지않는 이메일입니다.");
       } else if (data.result == "empty_phonenumber") {
         alert("휴대폰 번호를 입력해주세요.");
+      } else if (data.result == "empty_mode") {
+        alert("모드값이 비어있습니다.");
       }
     } else if (xhr.status == 404) {
       alert("통신 실패 파일이 존재하지 않습니다.");
@@ -121,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (rememberCheck.checked !== true) {
       alert("개인정보 취급방침에 동의해주셔야 예약이 가능합니다.");
     } else {
-      btn_sendMessage();
+      // btn_sendMessage();
       saveData(
         companyname.value,
         name.value,

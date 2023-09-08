@@ -117,15 +117,7 @@ function getTemplates() {
   request.send();
 }
 
-function sendMessage(
-  name,
-  reservation,
-  companyname,
-  email,
-  phonnumber,
-  pfid,
-  templateId
-) {
+function sendMessage(name, companyname, email, phonnumber, pfid, templateId) {
   let url = "https://api.solapi.com/messages/v4/send-many/detail";
 
   request = new XMLHttpRequest();
@@ -154,6 +146,14 @@ function sendMessage(
             "#{companyname}": companyname,
             "#{phonenumber}": phonnumber,
             "#{e-mail}": email,
+            "#{homelink}":
+              "port-9000-randingproject-jvvy2blm5sa5gq.sel5.cloudtype.app/company.php",
+            "#{inquirylink}":
+              "port-9000-randingproject-jvvy2blm5sa5gq.sel5.cloudtype.app/check.php",
+            "#{samplelink}":
+              "port-9000-randingproject-jvvy2blm5sa5gq.sel5.cloudtype.app/sample.php",
+            "#{communitylink}":
+              "port-9000-fitpartner-jvvy2blm5sa5gq.sel5.cloudtype.app/",
           },
         },
       },
@@ -171,6 +171,7 @@ function sendMessage(
 }
 
 function requestResult() {
+  console.log(request);
   if (request.readyState == XMLHttpRequest.DONE) {
     // alert(request.responseText);
   }
