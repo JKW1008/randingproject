@@ -1,3 +1,25 @@
+<?php
+    include './inc/dbconfig.php';
+
+    $db = $pdo;
+
+    include './inc/reservation.php';
+
+    $companyname = (isset($_GET['companyname']) && $_GET['companyname'] != '') ? $_GET['companyname'] : '';
+
+    if($companyname == ''){
+        die("
+            <script>
+                alert('회사명이 빠져있습니다.');
+                history.go(-1);
+            </script>
+        ");
+    }
+
+    $reser = new Reservation($db);
+
+    $reserRow = $reser->getInfo($companyname);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,6 +40,7 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <!-- aos js -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/recheck.js"></script>
 </head>
 
 <body>
@@ -26,30 +49,43 @@
             <div class="becomeMainImg">
                 <div class="formwrap">
                     <form class="" action="" method="post">
+
+
+                        <!-- Array
+(
+    [idx] => 1
+    [companyname] => aaa
+    [name] => aaa
+    [email] => hfis@naver.com
+    [phone_number] => 01085644780
+    [content] => 1234
+    [create_at] => 2023-09-08 01:18:51
+) -->
                         <h4>상담예약내역</h4>
+                        <input type="hidden" value=<?= $reserRow['companyname']; ?> id="old">
                         <div>
                             <input type="text" name="companyname" class="input_check_error" placeholder="업체명을 입력해주세요"
-                                id="companyname" />
+                                id="companyname" value=<?= $reserRow['companyname']; ?> />
                             <i class="fa-solid fa-address-card"></i>
                         </div>
                         <div>
-                            <input type="text" name="name" class="input_check_error" placeholder="대표명을 입력해주세요"
-                                id="name" />
+                            <input type="text" name="name" class="input_check_error" placeholder="대표명을 입력해주세요" id="name"
+                                value=<?= $reserRow['name']; ?> />
                             <i class="fa-solid fa-user-tie"></i>
                         </div>
                         <div>
                             <input type="email" name="email" class="input_check_error" placeholder="이메일을 입력해주세요"
-                                id="email" />
+                                id="email" value=<?= $reserRow['email']; ?> />
                             <i class="fa-solid fa-envelope"></i>
                         </div>
                         <div>
                             <input type="text" class="input_check_error" name="phone" placeholder="전화번호를 입력해주세요"
-                                id="phonnumber" />
+                                id="phonenumber" value=<?= $reserRow['phone_number'];  ?> readonly />
                             <i class="fa-solid fa-phone"></i>
                         </div>
                         <div>
                             <textarea name="textBox" class="input_check_error" cols="10" rows="300"
-                                placeholder="문의 내용을 입력해주세요" id="detail"></textarea>
+                                placeholder="문의 내용을 입력해주세요" id="detail"><?= $reserRow['content']; ?></textarea>
                         </div>
                         <div>
                             <label for="remember-check">
@@ -60,7 +96,7 @@
                         </div>
                         <div>
                             <button id="btnSubmit" style="cursor: pointer;" type="button">
-                                입점문의하기
+                                문의내역 수정하기
                             </button>
 
                         </div>
@@ -81,7 +117,7 @@
                         </div>
                         <div style="display: none;">
                             <a>get template info</a>
-                            <input type="text" id="template-id" value="KA01TP230904051709805B7OKxPku6w6" />
+                            <input type="text" id="template-id" value="KA01TP230907071300335hkrJNsfxxaO" />
                             <button onclick="getTemplateInfo()">get</button>
                         </div>
                         <div style="display: none;">
@@ -94,5 +130,28 @@
         </main>
     </section>
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/hmac-sha256.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64-min.js"></script>
+<script src="./js/solapi.js"></script>
+<script>
+function getPfInfo() {
+    let pfid = document.getElementById('pfid').value;
+    getPlusfriend(pfid);
+}
+
+function getPfInfos() {
+    getPlusfriends();
+}
+
+function getTemplateInfo() {
+    let templateId = document.getElementById('template-id').value;
+    getTemplate(templateId);
+}
+
+function getTemplateInfos() {
+    getTemplates();
+}
+</script>
 
 </html>

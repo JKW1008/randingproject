@@ -1,12 +1,3 @@
-function validatePhoneNumber(event) {
-  const value = event.target.value;
-  const onlyNumbers = value.replace(/\D/g, ""); // 숫자 이외의 문자 제거
-
-  if (value !== onlyNumbers) {
-    event.target.value = onlyNumbers; // 숫자로만 구성된 값으로 변경
-  }
-}
-
 function btn_sendMessage() {
   let name = document.getElementById("name").value;
   let companyname = document.querySelector("#companyname").value;
@@ -23,15 +14,16 @@ function btn_sendMessage() {
   sendMessage(name, companyname, email, phonenumber, pfid, templateId);
 }
 
-function saveData(companyname, name, email, phonenumber, detail) {
+function updateData(old, companyname, name, email, phonenumber, detail) {
   // FormData 객체 생성
   const f = new FormData();
+  f.append("old", old);
   f.append("companyname", companyname);
   f.append("name", name);
   f.append("email", email);
   f.append("phonenumber", phonenumber);
   f.append("detail", detail);
-  f.append("mode", "input");
+  f.append("mode", "edit");
 
   const xhr = new XMLHttpRequest();
 
@@ -41,8 +33,9 @@ function saveData(companyname, name, email, phonenumber, detail) {
   xhr.onload = () => {
     if (xhr.status === 200) {
       const data = JSON.parse(xhr.responseText);
+      console.log(data);
       if (data.result == "success") {
-        alert("예약접수 되었습니다.");
+        alert("수정한 정보로 예약접수 되었습니다.");
         // self.location.reload();
       } else if (data.result == "empty_companyname") {
         alert("업체명을 입력해주세요.");
@@ -56,6 +49,10 @@ function saveData(companyname, name, email, phonenumber, detail) {
         alert("휴대폰 번호를 입력해주세요.");
       } else if (data.result == "empty_mode") {
         alert("모드값이 비어있습니다.");
+      } else if (data.result == "update_failed") {
+        alert("정보 업데이트에 실패했습니다.");
+      } else if (data.result == "empty_old") {
+        alert("정보값이 빠져있습니다.");
       }
     } else if (xhr.status == 404) {
       alert("통신 실패 파일이 존재하지 않습니다.");
@@ -73,16 +70,14 @@ function saveData(companyname, name, email, phonenumber, detail) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const phonenumber = document.querySelector("#phonenumber");
-
-  phonenumber.addEventListener("input", validatePhoneNumber);
-
   const btnSubmit = document.querySelector("#btnSubmit");
 
   btnSubmit.addEventListener("click", () => {
+    const oldcompany = document.querySelector("#old");
     const companyname = document.querySelector("#companyname");
     const name = document.querySelector("#name");
     const email = document.querySelector("#email");
+    const phonenumber = document.querySelector("#phonenumber");
     const detail = document.querySelector("#detail");
     const rememberCheck = document.querySelector("#remember-check");
 
@@ -111,10 +106,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (rememberCheck.checked !== true) {
-      alert("개인정보 취급방침에 동의해주셔야 예약이 가능합니다.");
+      alert("개인정보 취급방침에 동의해주셔야 예약 수정이 가능합니다.");
     } else {
       btn_sendMessage();
-      saveData(
+      updateData(
+        oldcompany.value,
         companyname.value,
         name.value,
         email.value,

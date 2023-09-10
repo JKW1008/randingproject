@@ -149,7 +149,7 @@ function sendMessage(name, companyname, email, phonnumber, pfid, templateId) {
             "#{homelink}":
               "port-9000-randingproject-jvvy2blm5sa5gq.sel5.cloudtype.app/company.php",
             "#{inquirylink}":
-              "port-9000-randingproject-jvvy2blm5sa5gq.sel5.cloudtype.app/check.php",
+              "port-9000-randingproject-jvvy2blm5sa5gq.sel5.cloudtype.app/auth.php",
             "#{samplelink}":
               "port-9000-randingproject-jvvy2blm5sa5gq.sel5.cloudtype.app/sample.php",
             "#{communitylink}":
@@ -160,11 +160,9 @@ function sendMessage(name, companyname, email, phonnumber, pfid, templateId) {
     ],
   };
 
-  // console.log(data);
+  console.log(data);
 
   var message = JSON.stringify(data);
-
-  // console.log(message);
 
   request.send(message);
   return;
