@@ -43,7 +43,7 @@ function saveData(companyname, name, email, phonenumber, detail) {
       const data = JSON.parse(xhr.responseText);
       if (data.result == "success") {
         alert("예약접수 되었습니다.");
-        // self.location.reload();
+        self.location.href = "./auth.php";
       } else if (data.result == "empty_companyname") {
         alert("업체명을 입력해주세요.");
       } else if (data.result == "empty_name") {
@@ -122,7 +122,6 @@ document.addEventListener("DOMContentLoaded", () => {
         phonenumber.value,
         detail.value
       );
-      // self.location.href = "./auth.php";
     }
   });
 });
