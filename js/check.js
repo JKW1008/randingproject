@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (rememberCheck.checked !== true) {
       alert("개인정보 취급방침에 동의해주셔야 예약이 가능합니다.");
     } else {
-      alert("예약되었습니다.");
+      // alert("예약되었습니다.");
       btn_sendMessage();
       saveData(
         companyname.value,
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
         phonenumber.value,
         detail.value
       );
-      self.location.href = "./auth.php";
+      // self.location.href = "./auth.php";
     }
   });
 });
