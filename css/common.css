@@ -15,7 +15,6 @@
 }
 .content {
   max-width: 1440px;
-
   margin: 0 auto;
 
   /* margin: 0 auto; */
@@ -192,7 +191,7 @@ footer {
 .footer_itemBox1 {
   width: 100%;
   padding-bottom: 40px;
-  padding-left: 2%;
+  /* padding-left: 2%; */
   border-bottom: 1px solid #a7a7a7;
 }
 .footer_itemBox1 img {

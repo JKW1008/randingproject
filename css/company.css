@@ -114,10 +114,10 @@
   height: 600px;
 }
 .company4_box {
-  padding: 20px 0 20px 5%;
+  padding: 20px 0 20px 0;
 }
 .company4_box p {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 .company4_box p img {
   width: 15px;

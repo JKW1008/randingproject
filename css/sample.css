@@ -224,6 +224,7 @@ header h1 {
 .reserve_btn p {
   color: #7c7c7c;
   font-size: 1.5rem;
+  padding: 1rem 0;
 }
 /* ----------media query---------- */
 @media screen and (max-width: 1440px) {

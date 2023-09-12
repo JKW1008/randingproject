@@ -103,7 +103,7 @@
                         </h2>
                     </article>
                     <article class="section2_item2">
-                        <div>
+                        <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="400">
                             <img src="./images/main/section2_img1.png" alt="sectionimg" />
                             <div>
                                 <h1>
@@ -112,7 +112,7 @@
                                 </h1>
                             </div>
                         </div>
-                        <div>
+                        <div data-aos="fade-down" data-aos-delay="200" data-aos-duration="400">
                             <img src="./images/main/section2_img2.png" alt="sectionimg" />
                             <div>
                                 <h1>
@@ -133,8 +133,8 @@
                     <img src="./images/main/section5_img1.png" alt="section5 img" />
                     <article class="section5_text">
                         <div class="section5_text_item1">
-                            <p>Q. 회원가입하기 부담스러운데 1일권만 할 수 있나요?</p>
-                            <p>
+                            <p data-aos="fade-down" data-aos-delay="100" data-aos-duration="400">Q. 회원가입하기 부담스러운데 1일권만 할 수 있나요?</p>
+                            <p data-aos="fade-down" data-aos-delay="200" data-aos-duration="400">
                                 <strong>
                                     A. 피트파트너에서는 비회원도 간편하게 1일권 결제가
                                     가능합니다.
@@ -142,8 +142,8 @@
                             </p>
                         </div>
                         <div>
-                            <p>Q. 금액을 확인할려면 꼭 회원가입을 해야하나요?</p>
-                            <p>
+                            <p data-aos="fade-down" data-aos-delay="400" data-aos-duration="400">Q. 금액을 확인할려면 꼭 회원가입을 해야하나요?</p>
+                            <p data-aos="fade-down" data-aos-delay="500" data-aos-duration="400">
                                 <strong>A. 피트파트너에서는 금액을 확인하기 위해 회원가입을 하지
                                     않아도 됩니다.</strong>
                             </p>
@@ -193,7 +193,7 @@
                         <span><i class="fa-solid fa-circle-xmark"></i></span>
                     </div>
                 </article>
-                <div id="table_box">
+                <div id="table_box" data-aos="zoom-in-up" data-aos-duration="300">
                     <div class="box_title">Fit partner</div>
                     <div><i class="fa-solid fa-circle-check table_box_icon"></i></div>
                     <div><i class="fa-solid fa-circle-check table_box_icon"></i></div>
@@ -236,7 +236,7 @@
                     <article class="section4_text">
                         <h4>
                             피트 파트너는 전국 <br />
-                            현재 <span>약 8,900곳</span>의<br />
+                            현재 <span data-aos="zoom-in" data-aos-duration="300">약 8,900곳</span>의<br />
                             지점과 함께<br />
                             하고 있습니다.
                         </h4>
@@ -257,7 +257,7 @@
             <main>
                 <div class="becomeMainImg">
                     <div class="formwrap">
-                        <form class="" action="" method="post" data-aos="zoom-out-down" data-aos-duration="200">
+                        <form class="" action="" method="post" data-aos="zoom-in-down" data-aos-duration="200">
                             <h4>무료 입점상담</h4>
                             <div>
                                 <input type="text" name="companyname" class="input_check_error" placeholder="업체명을 입력해주세요" id="companyname" />

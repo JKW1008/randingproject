@@ -157,15 +157,15 @@
               </div>
               <div class="contact_img">
                 <div>
-                  <img class="wow rollIn" src="./images/service/kakao.png" alt="" />
+                  <img src="./images/service/kakao.png" alt="" />
                   <p>카톡 문의</p>
                 </div>
                 <div>
-                  <img class="wow flip" data-wow-duration="0.9s" src="./images/service/email.png" alt="" />
+                  <img src="./images/service/email.png" alt="" />
                   <p>이메일 문의</p>
                 </div>
                 <div>
-                  <img class="wow rollInRight" src="./images/service/phone1.png" alt="" />
+                  <img src="./images/service/phone1.png" alt="" />
                   <p>전화 문의</p>
                 </div>
               </div>
@@ -251,15 +251,15 @@
               </div>
               <div class="contact_img">
                 <div>
-                  <img class="wow rollIn" src="./images/service/kakao.png" alt="" />
+                  <img src="./images/service/kakao.png" alt="" />
                   <p>카톡 문의</p>
                 </div>
                 <div>
-                  <img class="wow flip" data-wow-duration="0.9s" src="./images/service/email.png" alt="" />
+                  <img src="./images/service/email.png" alt="" />
                   <p>이메일 문의</p>
                 </div>
                 <div>
-                  <img class="wow rollInRight" src="./images/service/phone1.png" alt="" />
+                  <img src="./images/service/phone1.png" alt="" />
                   <p>전화 문의</p>
                 </div>
               </div>
