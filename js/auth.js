@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   btnSubmit.addEventListener("click", () => {
     const companyname = document.querySelector("#companyname");
     const name = document.querySelector("#name");
+    const phonenumber = document.querySelector("#phonenumber");
     if (companyname.value == "") {
       alert("등록하신 업체명을 입력해 주세요.");
       companyname.focus();
@@ -16,6 +17,12 @@ document.addEventListener("DOMContentLoaded", () => {
       return false;
     }
 
+    if (phonenumber.value == "") {
+      alert("등록하신 대표번호를 입력해 주세요.");
+      phonenumber.focus();
+      return false;
+    }
+
     const xhr = new XMLHttpRequest();
 
     xhr.open("POST", "./pg/auth_process.php", true);
@@ -23,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const f = new FormData();
     f.append("companyname", companyname.value);
     f.append("name", name.value);
+    f.append("phonenumber", phonenumber.value);
 
     xhr.send(f);
 
@@ -30,10 +38,32 @@ document.addEventListener("DOMContentLoaded", () => {
       if (xhr.status == 200) {
         const data = JSON.parse(xhr.responseText);
 
-        if (data.result == "fail") {
-          alert("회사명 또는 대표자명을 잘못입력하셨습니다.");
+        if (data.result == "empty_companyname") {
+          alert("예약정보를 잘못입력하셨습니다.");
           companyname.value = "";
           name.value = "";
+          phonenumber.value = "";
+          companyname.focus();
+          return false;
+        } else if (data.result == "empty_name") {
+          alert("예약정보를 잘못입력하셨습니다.");
+          companyname.value = "";
+          name.value = "";
+          phonenumber.value = "";
+          companyname.focus();
+          return false;
+        } else if (data.result == "empty_phonenumber") {
+          alert("예약정보를 잘못입력하셨습니다.");
+          companyname.value = "";
+          name.value = "";
+          phonenumber.value = "";
+          companyname.focus();
+          return false;
+        } else if (data.result == "fail") {
+          alert("예약정보를 잘못입력하셨습니다.");
+          companyname.value = "";
+          name.value = "";
+          phonenumber.value = "";
           companyname.focus();
           return false;
         } else if (data.result == "success") {

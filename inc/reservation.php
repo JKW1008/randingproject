@@ -28,15 +28,15 @@
             $stmt->execute();
         }
 
-        public function login($companyname, $name) {
-            $sql = "SELECT name FROM reservation WHERE companyname=:companyname";
+        public function login($companyname, $name, $phonenumber) {
+            $sql = "SELECT name, phone_number FROM reservation WHERE companyname=:companyname";
             $stmt = $this->conn->prepare($sql);
             $stmt->bindParam(':companyname', $companyname);
             $stmt->execute();
         
             if ($stmt->rowCount()) {
                 $row = $stmt->fetch();
-                if ($row['name'] === $name) {
+                if ($row['name'] === $name && $row['phone_number'] === $phonenumber) {
                     // 회사명과 대표이름이 일치하는 경우 로그인 성공 처리 로직 작성
                     return true;
                 } else {

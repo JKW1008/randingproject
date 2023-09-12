@@ -55,6 +55,11 @@ form {
                                 id="name" />
                             <i class="fa-solid fa-user-tie"></i>
                         </div>
+                        <div>
+                            <input type="text" class="input_check_error" name="phone" placeholder="전화번호를 입력해주세요"
+                                id="phonenumber" />
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
                         <div style="margin-bottom: 4%;">
                             <button id="btnSubmit" style="cursor: pointer;" type="button">
                                 예약내역 조회하기
