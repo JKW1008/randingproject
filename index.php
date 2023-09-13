@@ -257,7 +257,7 @@
             <main>
                 <div class="becomeMainImg">
                     <div class="formwrap">
-                        <form class="" action="" method="post" data-aos="zoom-in-down" data-aos-duration="200">
+                        <form class="" action="" method="post" >
                             <h4>무료 입점상담</h4>
                             <div>
                                 <input type="text" name="companyname" class="input_check_error" placeholder="업체명을 입력해주세요" id="companyname" />
