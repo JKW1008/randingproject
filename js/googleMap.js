@@ -4,7 +4,14 @@ window.initMap = function () {
     zoom: 17,
   });
 
-  const malls = [{ label: "Fit", name: "핏트파트너", lat: 35.87562890112117, lng: 128.68133033325446 }];
+  const malls = [
+    {
+      label: "Fit",
+      name: "핏트파트너",
+      lat: 35.87562890112117,
+      lng: 128.68133033325446,
+    },
+  ];
   malls.forEach(({ label, name, lat, lng }) => {
     const marker = new google.maps.Marker({
       position: { lat, lng },
