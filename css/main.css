@@ -309,13 +309,16 @@ h2 {
 .becomeMainImg {
   width: 100%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url("../images/become/becomeMain.png");
   background-size: cover;
   background-position: center;
 }
 
 .becomeMainImg .formwrap {
-  padding-top: 150px;
+  /* padding-top: 150px; */
   display: flex;
   flex-direction: column;
   align-items: center;
