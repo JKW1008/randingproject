@@ -14,8 +14,9 @@
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="./js/header.js"></script>
   <!-- google 지도 api -->
-  <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6t9Z7dF4hKkPERfLv895xM2a_VYb3zu8&callback=initMap"></script>
   <script defer src="./js/googleMap.js"></script>
+  <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6t9Z7dF4hKkPERfLv895xM2a_VYb3zu8&callback=initMap"></script>
+
 </head>
 
 <body>
