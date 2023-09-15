@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/jquery.fullpage.css" />
     <!-- 폰트어썸 CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -133,7 +135,8 @@
                     <img src="./images/main/section5_img1.png" alt="section5 img" />
                     <article class="section5_text">
                         <div class="section5_text_item1">
-                            <p data-aos="fade-down" data-aos-delay="100" data-aos-duration="400">Q. 회원가입하기 부담스러운데 1일권만 할 수 있나요?</p>
+                            <p data-aos="fade-down" data-aos-delay="100" data-aos-duration="400">Q. 회원가입하기 부담스러운데 1일권만 할
+                                수 있나요?</p>
                             <p data-aos="fade-down" data-aos-delay="200" data-aos-duration="400">
                                 <strong>
                                     A. 피트파트너에서는 비회원도 간편하게 1일권 결제가
@@ -142,7 +145,8 @@
                             </p>
                         </div>
                         <div>
-                            <p data-aos="fade-down" data-aos-delay="400" data-aos-duration="400">Q. 금액을 확인할려면 꼭 회원가입을 해야하나요?</p>
+                            <p data-aos="fade-down" data-aos-delay="400" data-aos-duration="400">Q. 금액을 확인할려면 꼭 회원가입을
+                                해야하나요?</p>
                             <p data-aos="fade-down" data-aos-delay="500" data-aos-duration="400">
                                 <strong>A. 피트파트너에서는 금액을 확인하기 위해 회원가입을 하지
                                     않아도 됩니다.</strong>
@@ -218,7 +222,7 @@
 
                         <div class="section1_btn section3_btn">
                             <button>
-                                <a href="#">
+                                <a href="https://port-9000-fitpartner-jvvy2blm5sa5gq.sel5.cloudtype.app/">
                                     <h1>바로가기</h1>
                                 </a>
                             </button>
@@ -257,26 +261,31 @@
             <main>
                 <div class="becomeMainImg">
                     <div class="formwrap">
-                        <form class="" action="" method="post" >
+                        <form class="" action="" method="post">
                             <h4>무료 입점상담</h4>
                             <div>
-                                <input type="text" name="companyname" class="input_check_error" placeholder="업체명을 입력해주세요" id="companyname" />
+                                <input type="text" name="companyname" class="input_check_error"
+                                    placeholder="업체명을 입력해주세요" id="companyname" />
                                 <i class="fa-solid fa-address-card"></i>
                             </div>
                             <div>
-                                <input type="text" name="name" class="input_check_error" placeholder="대표명을 입력해주세요" id="name" />
+                                <input type="text" name="name" class="input_check_error" placeholder="대표명을 입력해주세요"
+                                    id="name" />
                                 <i class="fa-solid fa-user-tie"></i>
                             </div>
                             <div>
-                                <input type="email" name="email" class="input_check_error" placeholder="이메일을 입력해주세요" id="email" />
+                                <input type="email" name="email" class="input_check_error" placeholder="이메일을 입력해주세요"
+                                    id="email" />
                                 <i class="fa-solid fa-envelope"></i>
                             </div>
                             <div>
-                                <input type="text" class="input_check_error" name="phone" placeholder="전화번호를 입력해주세요" id="phonenumber" />
+                                <input type="text" class="input_check_error" name="phone" placeholder="전화번호를 입력해주세요"
+                                    id="phonenumber" />
                                 <i class="fa-solid fa-phone"></i>
                             </div>
                             <div>
-                                <textarea name="textBox" class="input_check_error" cols="10" rows="300" placeholder="문의 내용을 입력해주세요" id="detail"></textarea>
+                                <textarea name="textBox" class="input_check_error" cols="10" rows="300"
+                                    placeholder="문의 내용을 입력해주세요" id="detail"></textarea>
                             </div>
                             <div>
                                 <label for="remember-check">
@@ -358,23 +367,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64-min.js"></script>
     <script src="./js/solapi.js"></script>
     <script>
-        function getPfInfo() {
-            let pfid = document.getElementById('pfid').value;
-            getPlusfriend(pfid);
-        }
+    function getPfInfo() {
+        let pfid = document.getElementById('pfid').value;
+        getPlusfriend(pfid);
+    }
 
-        function getPfInfos() {
-            getPlusfriends();
-        }
+    function getPfInfos() {
+        getPlusfriends();
+    }
 
-        function getTemplateInfo() {
-            let templateId = document.getElementById('template-id').value;
-            getTemplate(templateId);
-        }
+    function getTemplateInfo() {
+        let templateId = document.getElementById('template-id').value;
+        getTemplate(templateId);
+    }
 
-        function getTemplateInfos() {
-            getTemplates();
-        }
+    function getTemplateInfos() {
+        getTemplates();
+    }
     </script>
 </body>
 
