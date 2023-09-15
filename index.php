@@ -224,7 +224,7 @@
                             </button>
                         </div>
                     </article>
-                    <img src="./images/main/section3_img1.png" alt="section3_img" />
+                    <img src="./images/main/section3_img1_mokup.png" alt="section3_img" />
                 </section>
             </main>
         </section>
