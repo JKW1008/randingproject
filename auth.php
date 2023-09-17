@@ -44,7 +44,7 @@ form {
             <div class="becomeMainImg">
                 <div class="formwrap">
                     <form class="" action="">
-                        <h4>상담예약내역 조회하기</h4>
+                        <h4>문의내역 조회하기</h4>
                         <div>
                             <input type="text" name="companyname" class="input_check_error"
                                 placeholder="등록하신 업체명을 입력해주세요" id="companyname" />
@@ -62,7 +62,7 @@ form {
                         </div>
                         <div style="margin-bottom: 4%;">
                             <button id="btnSubmit" style="cursor: pointer;" type="button">
-                                예약내역 조회하기
+                                문의내역 조회하기
                             </button>
                         </div>
                     </form>

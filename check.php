@@ -61,7 +61,7 @@
     [content] => 1234
     [create_at] => 2023-09-08 01:18:51
 ) -->
-                        <h4>상담예약내역</h4>
+                        <h4>문의내역</h4>
                         <input type="hidden" value=<?= $reserRow['companyname']; ?> id="old">
                         <div>
                             <input type="text" name="companyname" class="input_check_error" placeholder="업체명을 입력해주세요"
