@@ -60,15 +60,6 @@ function saveData(companyname, name, email, phonenumber, detail) {
     } else if (xhr.status == 404) {
       alert("통신 실패 파일이 존재하지 않습니다.");
     }
-    //   var data = JSON.parse(xhr.responseText);
-    //   if (data.result === "success") {
-    //     alert("통신 성공")
-    //   } else {
-    //     alert("통신 실패")
-    //   }
-    // } else {
-    //   console.error("Request failed. Returned status of ", xhr.status);
-    // }
   };
 }
 

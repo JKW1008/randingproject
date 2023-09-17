@@ -7,11 +7,7 @@
     $db = $pdo;
 
     include '../inc/reservation.php';
-    // Array ( [companyname] => aaa 
-    // [name] => aaaa 
-    // [email] => hfis@naver.com 
-    // [phonenumber] => 01085644780 
-    // [detail] => 1234 )
+
     $old         = (isset($_POST['old'        ]) && $_POST['old'        ] != '') ? $_POST['old'        ] : '';
     $companyname = (isset($_POST['companyname']) && $_POST['companyname'] != '') ? $_POST['companyname'] : '';
     $name        = (isset($_POST['name'       ]) && $_POST['name'       ] != '') ? $_POST['name'       ] : '';
