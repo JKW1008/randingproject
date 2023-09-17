@@ -49,18 +49,6 @@
             <div class="becomeMainImg">
                 <div class="formwrap">
                     <form class="" action="" method="post">
-
-
-                        <!-- Array
-(
-    [idx] => 1
-    [companyname] => aaa
-    [name] => aaa
-    [email] => hfis@naver.com
-    [phone_number] => 01085644780
-    [content] => 1234
-    [create_at] => 2023-09-08 01:18:51
-) -->
                         <h4>문의내역</h4>
                         <input type="hidden" value=<?= $reserRow['companyname']; ?> id="old">
                         <div>

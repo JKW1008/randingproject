@@ -9,7 +9,9 @@
     <!-- 캘린더 CSS -->
     <link rel="stylesheet" href="css/pignose.calendar.min.css" />
     <link rel="stylesheet" href="css/style_calender_box.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./images/common/favicon.ico" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/sample.css" />
@@ -58,7 +60,8 @@
                     </div>
                 </div>
                 <div class="info_text">
-                    <textarea name="textBox" class="input_check_error" cols="" rows="10" placeholder="문의 사항" id="detail"></textarea>
+                    <textarea name="textBox" class="input_check_error" cols="" rows="10" placeholder="문의 사항"
+                        id="detail"></textarea>
                 </div>
             </div>
         </div>
