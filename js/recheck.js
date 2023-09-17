@@ -108,6 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (rememberCheck.checked !== true) {
       alert("개인정보 취급방침에 동의해주셔야 예약 수정이 가능합니다.");
     } else {
+      alert("문의 정보가 수정되었습니다.");
       btn_sendMessage();
       updateData(
         oldcompany.value,
