@@ -41,7 +41,7 @@
                     <li data-anchor="sec6"><a href="#sec6">커뮤니티</a></li>
                     <li data-anchor="sec8"><a href="#sec8">입점문의</a></li>
                     <li><a href="./company.php">회사소개</a></li>
-                    
+
                 </ul>
             </nav>
             <div class="menutoggle">
@@ -207,18 +207,18 @@
                 </div>
             </main>
         </section>
-         <!-- 섹션8 예약 샘플 -->
-         <section class="section">
+        <!-- 섹션8 예약 샘플 -->
+        <section class="section">
             <main class="section_container">
                 <section class="section3 section_inner">
-                     <img src="./images/main/section4_mokup.png" alt="section4_img" />
-                     <article class="section3_text">
+                    <img src="./images/main/section4_mokup.png" alt="section4_img" />
+                    <article class="section3_text">
                         <strong>피트파트너만의 간편한 </strong>
                         <h3>예약 서비스</h3>
                         <p>
-                        회원, 비회원들이 사용할<br />
-                        쉽고, 빠르고, 간결.<br />
-                        피트파트너로 편리하게 예약해보세요.
+                            회원, 비회원들이 사용할<br />
+                            쉽고, 빠르고, 간결.<br />
+                            피트파트너로 편리하게 예약해보세요.
                         </p>
 
                         <div class="section1_btn section3_btn">
@@ -229,12 +229,12 @@
                             </button>
                         </div>
                     </article>
-                   
+
                 </section>
             </main>
         </section>
         <!-- 섹션3 -->
-        <section class="section">
+        <section class="section" style="background-color: rgba(200, 200, 200, 0.2);">
             <main class="section_container">
                 <section class="section3 section_inner">
                     <article class="section3_text">
