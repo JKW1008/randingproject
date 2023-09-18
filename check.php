@@ -40,7 +40,7 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <!-- aos js -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="./js/recheck.js?v=230917"></script>
+    <script src="./js/recheck.js?version=230918"></script>
 </head>
 
 <body>
