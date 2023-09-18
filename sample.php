@@ -24,7 +24,7 @@
 <body>
     <!-- 헤더 -->
     <header class="myheader">
-        <h1>업체명</h1>
+        <a href="./index.php"><h1>업체명</h1></a>
     </header>
     <!-- 본문 -->
     <main>
@@ -85,7 +85,7 @@
         </div>
         </div>
         <div class="reserve_btn wrapper">
-            <button>예약하기</button>
+            <button>제작 신청하기</button>
             <p>* 예약 시간 1시간 전 알림톡이 발송됩니다, 예약시간에 맞춰 매장을 방문해주세요.</p>
             <p>* 예약 시간 변경은 가능하나, 조정은 불가능함</p>
         </div>

@@ -10,7 +10,7 @@ $(function () {
     autoScrolling: true,
     navigation: true, //스크롤되는 구간별로 이동되는 버튼
     navigationPosition: "right",
-    anchors: ["sec1", "sec2", "sec3", "sec4", "sec5", "sec6", "sec7", "sec8"],
+    anchors: ["sec1", "sec2", "sec3", "sec4", "sec5", "sec6", "sec7", "sec8","sec9"],
 
     responsiveWidth: 768,
     onLeave: function () {

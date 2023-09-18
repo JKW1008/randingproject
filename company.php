@@ -23,7 +23,7 @@
   <!-- 헤더 -->
   <header class="myheader">
     <div class="container">
-      <a href="./index.html"><img src="./images/common/Fit Partner.png" alt="HeaderLogo" /></a>
+      <a href="./index.php"><img src="./images/common/Fit Partner.png" alt="HeaderLogo" /></a>
       <nav class="navMenu">
         <ul>
           <a href="./company.php">

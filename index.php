@@ -37,10 +37,11 @@
             <nav class="navMenu">
                 <ul>
                     <li data-anchor="sec2"><a href="#sec2">서비스소개</a></li>
-                    <li data-anchor="sec5"><a href="#sec5">커뮤니티</a></li>
-                    <li data-anchor="sec7"><a href="#sec7">입점문의</a></li>
+                    <li data-anchor="sec4"><a href="#sec5">샘플페이지</a></li>
+                    <li data-anchor="sec6"><a href="#sec6">커뮤니티</a></li>
+                    <li data-anchor="sec8"><a href="#sec8">입점문의</a></li>
                     <li><a href="./company.php">회사소개</a></li>
-                    <li><a href="./sample.php">샘플페이지</a></li>
+                    
                 </ul>
             </nav>
             <div class="menutoggle">
@@ -68,7 +69,6 @@
 
     <main id="fullpage">
         <!-- 섹션1 -->
-
         <section class="section" id="first_section">
             <main class="section_container">
                 <section class="section1 section_inner">
@@ -205,6 +205,32 @@
                     <div><i class="fa-solid fa-circle-check table_box_icon"></i></div>
                     <div><i class="fa-solid fa-circle-check table_box_icon"></i></div>
                 </div>
+            </main>
+        </section>
+         <!-- 섹션8 예약 샘플 -->
+         <section class="section">
+            <main class="section_container">
+                <section class="section3 section_inner">
+                     <img src="./images/main/section4_mokup.png" alt="section4_img" />
+                     <article class="section3_text">
+                        <strong>피트파트너만의 간편한 </strong>
+                        <h3>예약 서비스</h3>
+                        <p>
+                        회원, 비회원들이 사용할<br />
+                        쉽고, 빠르고, 간결.<br />
+                        피트파트너로 편리하게 예약해보세요.
+                        </p>
+
+                        <div class="section1_btn section3_btn">
+                            <button>
+                                <a href="./sample.php">
+                                    <h1>바로가기</h1>
+                                </a>
+                            </button>
+                        </div>
+                    </article>
+                   
+                </section>
             </main>
         </section>
         <!-- 섹션3 -->
